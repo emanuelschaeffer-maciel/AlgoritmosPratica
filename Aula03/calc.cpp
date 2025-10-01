@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {
 	float v1, v2;
-	char sinal = '0'; // sinal 
+	char sinal = '0'; // sinal "padrão"
 	float resultado;
 	
 	cout << "Calculadora: ";
@@ -33,11 +33,24 @@ int main()
 	    resultado = v1 / v2;
 	};
 
+
+
+    if (sinal == '%'){
+        if ((int)v1 == v1 && (int)v2 == v2){
+            int v1int = (int)v1;
+            int v2int = (int)v2;
+            resultado = v1int % v2int;
+        } else {
+            cout << "Pelo menos um dos valores não e inteiro";
+            return 0;
+        }
+    };
+	
 	
 	if (sinal == '0'){
 	    cout << "Sinal não reconhecido";
 	} else {
-	    	cout << v1 << sinal << v2 << "=" << resultado;
+	    cout << v1 << sinal << v2 << "=" << resultado;
 	};
 	
 	
