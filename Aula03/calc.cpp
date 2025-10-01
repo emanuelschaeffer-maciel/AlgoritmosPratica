@@ -7,6 +7,8 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main()
