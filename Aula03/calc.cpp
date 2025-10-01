@@ -32,9 +32,7 @@ int main()
 	if (sinal == '/'){
 	    resultado = v1 / v2;
 	};
-	if (sinal == '%'){
-	    resultado = v1 % v2;
-	}
+
 	
 	if (sinal == '0'){
 	    cout << "Sinal não reconhecido";
